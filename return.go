@@ -2,12 +2,13 @@ package main
 
 import "fmt"
 
-func swap() (int, int) {
+func nums() (int, int) {
+	/* Return two numbers, like a Python tuple*/
 	x := 3
 	y := 4
 	return x, y
 }
 
 func main() {
-	fmt.Println(swap())
+	fmt.Println(nums())
 }
