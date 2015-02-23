@@ -10,8 +10,9 @@ func change_num(x int) {
 	x = 50
 }
 
-func change_array(nums [3] int) {
+func change_array(nums [3]int) {
 	/* Array is passed by value here*/
+	/* The passed array isn't changed*/
 	fmt.Println("address inside function is", &nums[0])
 	nums[0] = 9
 }
@@ -26,7 +27,7 @@ func main() {
 	change_num(num)
 	fmt.Println(num)
 
-	nums := [3] int{1, 2, 3}
+	nums := [3]int{1, 2, 3}
 	fmt.Println(nums)
 	ptr := &nums[0]
 	fmt.Println("address is", ptr)
